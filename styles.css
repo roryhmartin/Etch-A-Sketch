@@ -1,1 +1,49 @@
+body {
+}
 
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(96, 79, 252, 0.082), white);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.grid-container {
+    /* Display as a grid */
+    /* display: grid; */
+    /* Set the grid layout with 16 columns and rows */
+    /* grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr); */
+    width: 50vw; /* Set the width to 100% of the viewport width */
+    height: 50vh; /* Set the height to 100% of the viewport height */
+}
+
+.grid-cell {
+    /* Set any additional styles for the grid cells */
+    /* flex: 0 0 100px;
+    height: 100px; */
+    border: 1px solid black;
+    /* aspect-ratio: 1 / 1; */
+}
+
+.buttons {
+    margin-top: 0.5rem;
+}
+
+.grid-cell-hover {
+    background-color: blue;
+}
