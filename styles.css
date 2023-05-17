@@ -17,9 +17,9 @@ body {
     min-width: 300px;
     min-height: 300px;
     width: 60vw;
-    height: 60vw;
-    max-width: 600px;
-    max-height: 600px;
+    height: 100vh;
+    max-width: 500px;
+    max-height: 1000;
 }
 
 .grid-container {
@@ -29,7 +29,9 @@ body {
     /* grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr); */
     width: 50vw; /* Set the width to 100% of the viewport width */
-    height: 50vh; /* Set the height to 100% of the viewport height */
+    height: 80vh; /* Set the height to 100% of the viewport height */
+    border: 50px solid red;
+    border-radius: 50px;
 }
 
 .grid-cell {
@@ -45,5 +47,5 @@ body {
 }
 
 .grid-cell-hover {
-    background-color: blue;
+    background-color: #5a5a5a;
 }
