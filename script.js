@@ -25,16 +25,17 @@ function createGridCells(gridSize) {
     }
 }
 createGridCells(16);
+
 function changeSizeOfGrid(e) {
     e.preventDefault(); // stop initial behavior
     const gridSize = document.querySelector('#gridInput').value;
     if (gridSize > 100) {
         return alert('Must not go above 100');
-    } else if (gridSize < 2) {
-        return alert('Must not go below 2');
-    } else {
-        return createGridCells(gridSize);
     }
+    if (gridSize < 2) {
+        return alert('Must not go below 2');
+    }
+    return createGridCells(gridSize);
 }
 
 function changeColor(e) {

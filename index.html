@@ -11,13 +11,15 @@
         <div class="flex-container">
             <div class="content">
                 <h1 class="title">Etch-A-Sketch</h1>
-                <div class="grid-container" id="grid-container"></div>
-                <div class="buttons">
-                    <form id="grid-size-form">
-                        <input type="text" placeholder="Size of Board" value="16" id="gridInput" />
-                        <input type="submit" value="Submit" />
-                    </form>
-                    <button id="reset">Clear Grid</button>
+                <div class="border">
+                    <div class="grid-container" id="grid-container"></div>
+                    <div class="buttons-section">
+                        <form id="grid-size-form" class="grid-size-form">
+                            <input type="text" placeholder="Enter Size of Board" value="" id="gridInput" class="grid-input" />
+                            <input type="submit" value="resize" class="resize-button button" />
+                        </form>
+                        <button id="reset" class="button">Clear Grid</button>
+                    </div>
                 </div>
             </div>
         </div>
